@@ -54,14 +54,22 @@
 
                       $.getJSON("http://127.0.0.1/getPeople.php" + "?lat=" + crd.latitude + "&lon=" +  crd.longitude, function (json) {
                         for(var pearson in json.results){
+
+                            distance = json.results[pearson].user.distance_mi;
+
+                            var latlnga = L.latLng(crd.latitude + (distance / (111)), crd.longitude);
+                            console.log(latlnga);
                             console.log(json.results[pearson]);
                             var circle = L.circle(latlng, {
                                 color: 'red',
                                 fillColor: '#' + getRandomColor(),
                                 fillOpacity: 0.1,
-                                radius: json.results[pearson].user.distance_mi * 1000
+                                radius: distance * 1000
                             })
                             .addTo(map);
+
+                            var mark = L.marker(latlnga).addTo(map)
+                                .bindPopup('<a target="_blank" href="' + json.results[pearson].user.photos[0].url + '"'+ '><img width="200px" height="200px" src="' + json.results[pearson].user.photos[0].url + '"/>')
                         }
                       });
                 };
