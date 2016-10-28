@@ -1,0 +1,100 @@
+[
+    {
+        "name": "pecee/http-service",
+        "version": "1.1.2",
+        "version_normalized": "1.1.2.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/skipperbent/http-service.git",
+            "reference": "7db8e3504d3077bf2d5f5afd835783f6a94cb701"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/skipperbent/http-service/zipball/7db8e3504d3077bf2d5f5afd835783f6a94cb701",
+            "reference": "7db8e3504d3077bf2d5f5afd835783f6a94cb701",
+            "shasum": ""
+        },
+        "require-dev": {
+            "phpunit/phpunit": "4.7.7"
+        },
+        "time": "2016-06-03 16:48:59",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Pecee\\": "src/Pecee/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Simon Sessingø",
+                "email": "simon.sessingoe@gmail.com"
+            }
+        ],
+        "description": "Simple, fast and easy to use classes for providing basic functionality for talking with remote api's including the REST standard.",
+        "keywords": [
+            "api",
+            "http",
+            "pecee",
+            "rest",
+            "service",
+            "web"
+        ]
+    },
+    {
+        "name": "pecee/tinder-sdk",
+        "version": "1.2.1",
+        "version_normalized": "1.2.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/skipperbent/tinder-php-sdk.git",
+            "reference": "ed545ecb00e0637a1fcda8ce20a1fa958c95f4b0"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/skipperbent/tinder-php-sdk/zipball/ed545ecb00e0637a1fcda8ce20a1fa958c95f4b0",
+            "reference": "ed545ecb00e0637a1fcda8ce20a1fa958c95f4b0",
+            "shasum": ""
+        },
+        "require": {
+            "pecee/http-service": "1.*"
+        },
+        "require-dev": {
+            "pecee/http-service": "1.*",
+            "phpunit/phpunit": "4.7.7"
+        },
+        "time": "2016-09-29 13:35:34",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Pecee\\": "src/Pecee/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Simon Sessingø",
+                "email": "simon.sessingoe@gmail.com"
+            }
+        ],
+        "description": "Easy to use PHP SDK for accessing Tinder data.",
+        "keywords": [
+            "api",
+            "http",
+            "pecee",
+            "rest",
+            "sdk",
+            "service",
+            "tinder",
+            "web"
+        ]
+    }
+]
